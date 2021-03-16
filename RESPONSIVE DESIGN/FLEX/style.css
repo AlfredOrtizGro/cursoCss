@@ -1,0 +1,55 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .main, .aside, .footer{
+    padding: 20px;
+}
+
+.header{
+    background-color: powderblue;
+    flex-basis: 70px;
+}
+
+.main{
+    background-color: lightcoral;
+    flex-basis: 300px;
+    flex-grow: 4;
+}
+
+.aside{
+    background-color: lightgreen;
+    flex-basis: 300px;
+    flex-grow: 1;
+  
+}
+
+.footer{
+    background-color: lemonchiffon;
+    flex-grow: 1;
+}
+
+@media screen and (min-width: 700px){
+    .content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        flex-basis: 100%;
+        max-height: 70px;
+    }
+
+    .main, .aside{
+        min-height: 300px ;
+    }
+
+    .footer{
+        flex-basis: 100%;
+        max-height: 100px;
+    }
+}
