@@ -1,0 +1,36 @@
+.container {
+    padding: 20px 5px;
+    background-color: #86f;
+    height: 100vh;
+}
+
+.caja {
+    background-color: #025;
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+   
+    
+}
+.caja-2 {
+    background-color: #025;
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    transition: transform 1s;
+    
+    
+}
+
+.caja-2:hover {
+    transform: translate(100%,100%) scale(3) rotate(360deg) skew(5deg);
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+b {
+    margin: auto;
+}
